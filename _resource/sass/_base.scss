@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* *************************************
+
+base style
+
+************************************** */
+
+.cf {
+	@include cf;
+}
+
+* {
+	font-size: 16px;
+	color: #333;
+	outline: none;//focus時chromeの枠線を非表示
+	box-sizing: border-box;
+}
+body {
+	font-family: 'HiraKakuGoProW3', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Noto Sans Japanese', 'メイリオ', Meiryo;
+	font-weight: 200;
+	background-color: $bg-color;
+
+	// background-image:
+	// 	url("../image/noise.png"),
+	// 	linear-gradient(to right, rgba(#fff,1),  rgba(#fff,1));
+	// background-repeat:
+	// 	repeat, /* 最前面の背景レイヤーに対応 */
+	// 	no-repeat;
+	// background-position:
+	// 	center, /* 最前面の背景レイヤーに対応 */
+	// 	center;
+	// background-size:
+	// 	auto,
+	// 	auto;
+}
+h1, h2, h3, h4 {
+	// font-family: 'FuturaMd', 'Noto Sans Japanese', 'メイリオ', Meiryo;
+}
+ul {
+	font-size: 0;
+	list-style: none;
+}
+img {
+vertical-align: bottom;
+}
+
+a {
+	&:hover {
+		opacity: 0.7;
+		transition: 0.7s;
+	}
+	&:hover,
+	&:active {
+		color: inherit;
+		text-decoration: underline;
+	}
+	&:link,
+	&:visited {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+/* margin, padding */
+@if $margin-class {
+	@for $i from 0 through $end-val {
+		.mt#{$i * 5} {
+			margin-top: 5px * $i !important;
+		}
+		.mb#{$i * 5} {
+			margin-bottom: 5px * $i !important;
+		}
+		@if $padding-class {
+			.pt#{$i * 5} {
+				padding-top: 5px * $i !important;
+			}
+			.pb#{$i * 5} {
+				padding-bottom: 5px * $i !important;
+			}
+		}
+	}
+}

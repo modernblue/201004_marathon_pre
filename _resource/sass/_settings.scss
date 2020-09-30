@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* *************************************
+
+settings style
+
+************************************** */
+
+// min-width
+$breakpoint-up: (
+	'sm': 'all and (min-width: 415px)',
+	'md': 'all and (min-width: 769px)',
+	'lg': 'all and (min-width: 1001px)',
+	'xl': 'all and (min-width: 1201px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+	'sm': 'all and (max-width: 414px)',
+	'md': 'all and (max-width: 768px)',
+	'lg': 'all and (max-width: 1000px)',
+	'xl': 'all and (max-width: 1200px)',
+) !default;
+
+$margin-class: true !default;
+$padding-class: true !default;
+$end-val: 10 !default;
+
+$image-dir : '../image/';
+$font-dir : '../font/';
+
+$base-color: #b31d22;
+$base-link-color: #e81f18;
+$coution-color: #6f095f;
+$btn-color: #222;
+$btn-color-contrast: #222;
+$bg-color: #fafbfb;
+$bg-color-pickup: #f9f8f8;
+
+// $color-white: #FFF;
+// $sns-color-twitter: #55ACEE;
+// $sns-color-facebook: #3B5998;
+// $sns-color-instagram: #E3007F;
+// $sns-color-line: #00B833;

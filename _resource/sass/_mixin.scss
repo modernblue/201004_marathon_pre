@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* *************************************
+
+mixin style
+
+************************************** */
+
+@mixin cf {
+	zoom: 1;
+	&:before,
+	&:after {
+		display: block;
+		height: 0;
+		visibility: hidden;
+		content: '';
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin btn-base-style {
+	// display: block;
+	padding: 8px 15px;
+	background: $btn-color;
+	color: #fff;
+	border-radius: 19px;
+	font-size: 14px;
+	font-family: "FuturaConMid";
+	i {
+		color: inherit;
+	}
+	&.slick-current {
+		color: $btn-color;
+		background: #fff;
+		border: solid $btn-color 2px;
+	}
+}
+@mixin btn-menu-style {
+	background-color: $base-color;
+	display: block;
+	width: 36px;
+	height: 3px;
+	border-radius: 3px;
+	transition: transform 0.5s;
+}
+@mixin txt-wrap-style {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@mixin sec-col-style {
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 40px 0;
+	background: rgba(255,255,255,.9);
+	z-index: 1;
+}
+@mixin sec-ttl {
+	text-align: center;
+	font-size: 18px;
+	.sec__ttl--langEn {
+		display: block;
+		margin: 0 0 20px;
+		color: $base-color;
+		font-size: 48px;
+		font-family: "FuturaConMid";
+	}
+}
+@mixin col-ttl {
+	text-align: center;
+	font-size: 18px;
+}
+@mixin grad-btn {
+	display: inline-block;
+	border-radius: 25px;
+	padding: 15px 60px;
+	background: linear-gradient(50deg, $btn-color, $btn-color-contrast);
+	font-size: 100%;
+	color: #fff;
+}
+
+@mixin btn-cmn {
+	width: 60%;
+	margin: 30px auto 0;
+	a {
+		display: block;
+		background: $btn-color;
+		color: #ffffff;
+		text-align: center;
+		padding: 18px 0;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 200;
+		position: relative;
+		box-sizing: border-box;
+		border: solid #ffffff 1px;
+
+		width: 100%;
+		margin: 0 auto;
+		&:hover {
+			color: $btn-color;
+			background: #ffffff;
+			border: solid $btn-color 1px;
+		}
+	}
+}
+
+
+@mixin mq-up($breakpoint: md) {
+	@media #{map-get($breakpoint-up, $breakpoint)} {
+		@content;
+	}
+}
+@mixin mq-down($breakpoint: md) {
+	@media #{map-get($breakpoint-down, $breakpoint)} {
+		@content;
+	}
+}

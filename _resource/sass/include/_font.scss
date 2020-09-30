@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* *************************************
+
+font style
+
+************************************** */
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@font-face {
+	font-family: "FuturaConMid";
+	src: url("#{$font-dir}futura_condensed_medium.woff2") format('woff2'),
+		url("#{$font-dir}futura_condensed_medium.woff")  format('woff');
+}
+@font-face {
+	font-family: "FuturaConLig";
+	src: url("#{$font-dir}futura_condensed_light.woff2") format('woff2'),
+		url("#{$font-dir}futura_condensed_light.woff")  format('woff');
+}
+@font-face {
+	font-family: "FuturaMd";
+	src: url("#{$font-dir}futura_md.eot?")  format('eot'),
+		url("#{$font-dir}futura_md.woff2") format('woff2'),
+		url("#{$font-dir}futura_md.woff")  format('woff');
+}
+@font-face {
+	font-family: "FuturaMi";
+	src: url("#{$font-dir}futura_mi.eot?")  format('eot'),
+		url("#{$font-dir}futura_mi.woff2") format('woff2'),
+		url("#{$font-dir}futura_mi.woff")  format('woff');
+}

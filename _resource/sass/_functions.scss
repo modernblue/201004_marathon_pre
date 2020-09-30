@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* *************************************
+
+functions style
+
+************************************** */
+
+@function getFontSize ($val) {// ex.) font-size: getFontSize(0.8);
+	@return $val + rem;
+}

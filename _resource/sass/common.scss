@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* *************************************
+Date: 2020-09-01
+SCSS Document: 楽天スーパーSALE 告知
+
+common style
+
+************************************** */
+
+@import 'compass/reset';
+@import 'compass';
+
+@import 'settings';
+@import 'functions';
+@import 'mixin';
+@import 'base';
+@import 'layout';
+
+@import 'include/font';
