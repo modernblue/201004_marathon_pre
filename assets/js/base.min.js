@@ -16,7 +16,7 @@ var app = new Vue({
     //showDelvFree: false,
     //「並び替え」の選択値（1：標準、2：価格が安い順）
     //sortOrder: 1,
-    campaign: "200921_marathon_pre",
+    campaign: "201004_marathon_pre",
     shippingFree: 3850,
     items: [],
     categoryList: [],

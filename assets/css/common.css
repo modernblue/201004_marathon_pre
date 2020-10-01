@@ -399,7 +399,7 @@ layout style
   color: #b31d22;
 }
 .header .header__cont .header__left .header__search::after {
-  content: '【告知】楽天お買い物マラソン 9月21日(月)スタート！';
+  content: '【告知】楽天お買い物マラソン 10月4日(日)スタート！';
   position: absolute;
   display: block;
   left: 0;
@@ -469,17 +469,17 @@ layout style
 .header .header__nav.nav .nav__items {
   width: 1100px;
   margin: 0 auto;
-  height: 66px;
+  height: 103px;
 }
 .header .header__nav.nav .nav__items .item {
   display: inline-block;
-  width: calc(100% / 8);
+  width: calc(100% / 6);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .header .header__nav.nav .nav__items .item a {
   display: block;
-  padding: 22px 0;
+  padding: 15px 0;
   font-weight: bold;
   font-size: 13px;
   text-align: center;
@@ -490,13 +490,25 @@ layout style
 .header .header__nav.nav .nav__items .item:last-child a {
   border-right: solid #fff 1px;
 }
+.header .header__nav.nav .nav__items.isMen .item:nth-child(6) {
+  border-right: solid #fff 1px;
+}
+.header .header__nav.nav .nav__items.isMen .item:nth-child(-n + 6) {
+  border-bottom: solid #fff 1px;
+}
 .header .header__nav.nav .nav__items.isWomen .item {
-  width: calc(100% / 6);
+  width: calc(100% / 4);
+}
+.header .header__nav.nav .nav__items.isWomen .item:nth-child(4) {
+  border-right: solid #fff 1px;
+}
+.header .header__nav.nav .nav__items.isWomen .item:nth-child(-n + 4) {
+  border-bottom: solid #fff 1px;
 }
 
 .main {
   position: relative;
-  margin: 30px auto 0;
+  margin: 70px auto 0;
 }
 .main .main__headline {
   margin: 0 auto 0;
@@ -531,8 +543,8 @@ layout style
   font-weight: bold;
 }
 .main .main__headline.headline .headline__date span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #6f095f));
-  background: linear-gradient(rgba(0, 0, 0, 0) 50%, #6f095f 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #d85401));
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, #d85401 50%);
   font-size: inherit;
   text-shadow: 1px 1px 0 #fff;
 }
@@ -571,7 +583,7 @@ layout style
   margin: 20px auto 0;
   padding: 22px 0;
   color: #fff;
-  background: #6f095f;
+  background: #d85401;
   border-radius: 32px;
   font-weight: bold;
   font-size: 20px;
@@ -583,7 +595,7 @@ layout style
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #6f095f;
+  color: #d85401;
   text-shadow: 1px 1px 0 #aaa;
 }
 .main .main__headline.headline .headline__cpn.cpn .cpn__bnr {
@@ -620,7 +632,7 @@ layout style
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #6f095f;
+  color: #d85401;
   text-shadow: 1px 1px 0 #aaa;
 }
 .main .main__headline.headline .headline__info.info .info__list {
@@ -649,7 +661,7 @@ layout style
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #6f095f;
+  color: #d85401;
   text-shadow: 1px 1px 0 #aaa;
 }
 .main .main__headline.headline .headline__nav.nav .nav__items {
@@ -809,7 +821,7 @@ layout style
   top: 0;
   left: 0;
   display: block;
-  background: #6f095f;
+  background: #d85401;
   padding: 3px 5px 2px;
   color: #fff;
   line-height: 1.4em;
@@ -983,6 +995,7 @@ layout style
   color: #e81f18;
   font-size: 16px;
   margin: 20px 0 0 10px;
+  height: 25px;
 }
 .main .main__cont.cont .cont__remark.remark .remark__list .item .item__price span {
   color: inherit;
@@ -1007,7 +1020,7 @@ layout style
   top: 0;
   left: 0;
   display: block;
-  background: #6f095f;
+  background: #d85401;
   padding: 3px 5px 2px;
   color: #fff;
   line-height: 1.4em;
@@ -1393,7 +1406,7 @@ layout style
     padding: 0;
   }
   .header .header__cont .header__left .header__search::after {
-    content: '【告知】楽天お買い物マラソン 9月21日(月)スタート！';
+    content: '【告知】楽天お買い物マラソン 10月4日(日)スタート！';
     position: relative;
     bottom: -5px;
     font-size: 11px;
@@ -1490,14 +1503,14 @@ layout style
     border-bottom: solid #ccc 1px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 12px;
   }
   .header .header__cont .header__menu .menu__cont .info__items .item:last-child, .header .header__cont .header__menu .menu__cont .nav__items .item:last-child {
     border: none;
   }
   .header .header__cont .header__menu .menu__cont .info__items .item a, .header .header__cont .header__menu .menu__cont .nav__items .item a {
     display: inline-block;
-    padding: 15px 0;
+    padding: 10px 0;
     width: 100%;
   }
 
