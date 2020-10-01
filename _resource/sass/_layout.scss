@@ -86,7 +86,7 @@ layout style
 					}
 				}
 				&::after {
-					content: '【告知】楽天お買い物マラソン 9月21日(月)スタート！';
+					content: '【告知】楽天お買い物マラソン 10月4日(日)スタート！';
 					position: absolute;
 					display: block;
 					left: 0;
@@ -172,14 +172,16 @@ layout style
 			.nav__items {
 				width: 1100px;
 				margin: 0 auto;
-				height: 66px;
+				// height: 66px;
+				height: 103px;
 				.item {
 					display: inline-block;
-					width: calc(100% / 8);
+					width: calc(100% / 6);
 					box-sizing: border-box;
 					a {
 						display: block;
-						padding: 22px 0;
+						// padding: 22px 0;
+						padding: 15px 0;
 						font-weight: bold;
 						//font-size: 14px;
 						font-size: 13px;
@@ -193,10 +195,25 @@ layout style
 					&:last-child a {
 						border-right: solid #fff 1px;
 					}
+
+				}
+				&.isMen {
+					.item:nth-child(6) {
+						border-right: solid #fff 1px;
+					}
+					.item:nth-child(-n + 6) {
+						border-bottom: solid #fff 1px;
+					}
 				}
 				&.isWomen {
 					.item {
-						width: calc(100% / 6);
+						width: calc(100% / 4);
+					}
+					.item:nth-child(4) {
+						border-right: solid #fff 1px;
+					}
+					.item:nth-child(-n + 4) {
+						border-bottom: solid #fff 1px;
 					}
 				}
 			}
@@ -205,7 +222,8 @@ layout style
 }
 .main {
 	position: relative;
-	margin: 30px auto 0;
+	// margin: 30px auto 0;
+	margin: 70px auto 0;
 	.main__headline {
 		margin: 0 auto 0;
 		width: 1000px;
@@ -682,6 +700,8 @@ layout style
 								color: $base-link-color;
 								font-size: 16px;
 								margin: 20px 0 0 10px;
+
+								height: 25px;
 								span {
 									color: inherit;
 									display: inline-block;
@@ -1107,7 +1127,7 @@ layout style
 					}
 				}
 				&::after {
-					content: '【告知】楽天お買い物マラソン 9月21日(月)スタート！';
+					content: '【告知】楽天お買い物マラソン 10月4日(日)スタート！';
 					position: relative;
 					// display: block;
 					// left: 0;
@@ -1186,7 +1206,8 @@ layout style
 					.item {
 						border-bottom: solid #ccc 1px;
 						box-sizing: border-box;
-						font-size: 14px;
+						// font-size: 14px;
+						font-size: 12px;
 						&:last-child {
 							border: none;
 						}
@@ -1197,7 +1218,8 @@ layout style
 						a {
 							display: inline-block;
 							// padding: 20px 0;
-							padding: 15px 0;
+							// padding: 15px 0;
+							padding: 10px 0;
 							width: 100%;
 						}
 					}
